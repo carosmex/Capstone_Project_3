@@ -1,8 +1,9 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Backend\ServiceTypeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,3 +44,8 @@ Route::middleware(['auth', 'role:admin'])->group(function(){
 
 Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->name('admin.login');
 
+Route::middleware(['auth', 'role:admin'])->group(function(){    
+Route::controller(ServiceTypeController::class)->group(function(){
+    Route::get('/all/type', 'AllType')->name('all.type');
+});
+});

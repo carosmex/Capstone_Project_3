@@ -58,132 +58,23 @@
             <li class="nav-item nav-category">Components</li>
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" href="#uiComponents" role="button" aria-expanded="false"
-                    aria-controls="uiComponents">
-                    <i class="link-icon" data-feather="feather"></i>
-                    <span class="link-title">Inventory Management</span>
+                    aria-controls="advancedUI">
+                    <i class="link-icon" data-feather="book-open"></i>
+                    <span class="link-title">Service Type</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
                 <div class="collapse" id="uiComponents">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="pages/ui-components/accordion.html" class="nav-link">List of Materials</a>
+                            <a href="{{ route('all.type') }}" class="nav-link">All Type</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/ui-components/alerts.html" class="nav-link">List of Equipment</a>
+                            <a href="pages/ui-components/alerts.html" class="nav-link">Add Type</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="pages/ui-components/alerts.html" class="nav-link">Records of Materials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/ui-components/alerts.html" class="nav-link">Status of Equipment</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/ui-components/alerts.html" class="nav-link">Inventory Logs</a>
-                        </li>
+                    </ul>
+                </div>
+            </li>
 
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#advancedUI" role="button" aria-expanded="false"
-                    aria-controls="advancedUI">
-                    <i class="link-icon" data-feather="users"></i>
-                    <span class="link-title">Customers</span>
-                    <i class="link-arrow" data-feather="chevron-down"></i>
-                </a>
-                <div class="collapse" id="advancedUI">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/cropper.html" class="nav-link">Customer List</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Maintenance Scheduling</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#forms" role="button" aria-expanded="false"
-                    aria-controls="advancedUI">
-                    <i class="link-icon" data-feather="activity"></i>
-                    <span class="link-title">Scheduling</span>
-                    <i class="link-arrow" data-feather="chevron-down"></i>
-                </a>
-                <div class="collapse" id="forms">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/cropper.html" class="nav-link">Maintenance Schedule</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#tables" role="button" aria-expanded="false"
-                    aria-controls="advancedUI">
-                    <i class="link-icon" data-feather="shopping-bag"></i>
-                    <span class="link-title">Order</span>
-                    <i class="link-arrow" data-feather="chevron-down"></i>
-                </a>
-                <div class="collapse" id="tables">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/cropper.html" class="nav-link">Order List</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Processed Order</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Purchase Order</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#special-pages" role="button"
-                    aria-expanded="false" aria-controls="advancedUI">
-                    <i class="link-icon" data-feather="briefcase"></i>
-                    <span class="link-title">Employee Management</span>
-                    <i class="link-arrow" data-feather="chevron-down"></i>
-                </a>
-                <div class="collapse" id="special-pages">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/cropper.html" class="nav-link">Contractors</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#icons" role="button" aria-expanded="false"
-                    aria-controls="advancedUI">
-                    <i class="link-icon" data-feather="pie-chart"></i>
-                    <span class="link-title">Status Report</span>
-                    <i class="link-arrow" data-feather="chevron-down"></i>
-                </a>
-                <div class="collapse" id="icons">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/cropper.html" class="nav-link">Reorder level</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Sales</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Customers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Pending Orders</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/advanced-ui/owl-carousel.html" class="nav-link">Reports</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </li>
         </ul>
     </div>
 </nav>
