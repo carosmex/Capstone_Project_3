@@ -11,10 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('service_types', function (Blueprint $table) {
+        Schema::create('tickets', function (Blueprint $table) {
+            $table->enum('status', ['new','open', 'pending' ,'solved'])->default('open');
             $table->id();
-            $table->string('type_name');
+            $table->string('service_type');
+            $table->string('requester');
             $table->timestamps();
+            $table->unsignedInteger('priority');
         });
     }
 
@@ -23,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('service_types');
+        Schema::dropIfExists('tickets');
     }
 };

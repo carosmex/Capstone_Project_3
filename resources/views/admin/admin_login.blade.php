@@ -40,7 +40,7 @@
     <!-- endinject -->
 
     <!-- Layout styles -->
-    <link rel="stylesheet" href="{{ asset('backend/assets/css/demo2/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('backend/assets/css/demo1/style.css') }}">
     <!-- End layout styles -->
 
     <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.png') }}" />
@@ -91,8 +91,7 @@
                                                     Login
                                                 </button>
                                             </div>
-                                            <a href="register.html" class="d-block mt-3 text-muted">Not a user? Sign
-                                                up</a>
+
                                         </form>
                                     </div>
                                 </div>

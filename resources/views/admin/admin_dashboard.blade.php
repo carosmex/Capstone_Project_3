@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- End fonts -->
 
+    <!-- custom css -->
+
+
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="{{ asset('backend/assets/vendors/datatables.net-bs5/dataTables.bootstrap5.css') }}">
     <!-- End plugin css for this page -->
@@ -35,8 +38,12 @@
     <!-- endinject -->
 
     <!-- Layout styles -->
-    <link rel="stylesheet" href="{{ asset('backend/assets/css/demo2/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('backend/assets/css/demo1/style.css') }}">
     <!-- End layout styles -->
+
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="{{ asset('backend/assets/vendors/fullcalendar/main.min.css') }}">
+    <!-- End plugin css for this page -->
 
     <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.png') }}" />
 
@@ -114,6 +121,12 @@
 
     <script src="{{ asset('backend/assets/js/data-table.js') }}"></script>
     <!-- End DataTable -->
+
+    <!-- Plugin js for this page -->
+    <script src="{{ asset('backend/assets/vendors/moment/moment.min.js') }}"></script>
+    <script src="{{ asset('backend/assets/vendors/fullcalendar/main.min.js') }}"></script>
+    <!-- End plugin js for this page -->
+
 </body>
 
 </html>

@@ -32,6 +32,11 @@ class AdminController extends Controller
         return view('admin.admin_login');
     }
 
+    public function AdminCalendar()
+    {
+        return view('admin.admin_calendar');
+    }
+
     public function AdminProfile()
     {
         $id = Auth::user()->id;

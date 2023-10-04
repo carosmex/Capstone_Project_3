@@ -1,6 +1,6 @@
 <nav class="sidebar">
     <div class="sidebar-header">
-        <a href="#" class="sidebar-brand">
+        <a href="{{ route('admin.dashboard') }}" class="sidebar-brand">
             AWES<span>manila</span>
         </a>
         <div class="sidebar-toggler not-active">
@@ -42,37 +42,28 @@
             </li>
 
             <!--<li class="nav-item">
-          <a href="pages/apps/chat.html" class="nav-link">
-            <i class="link-icon" data-feather="message-square"></i>
-            <span class="link-title">Chat</span>
-          </a>
-        </li>-->
+              <a href="pages/apps/chat.html" class="nav-link">
+                <i class="link-icon" data-feather="message-square"></i>
+                <span class="link-title">Chat</span>
+              </a>
+            </li>-->
 
             <li class="nav-item">
-                <a href="pages/apps/calendar.html" class="nav-link">
+                <a href="{{ route('admin.calendar') }}" class="nav-link">
                     <i class="link-icon" data-feather="calendar"></i>
                     <span class="link-title">Calendar</span>
                 </a>
             </li>
 
             <li class="nav-item nav-category">Components</li>
+
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#uiComponents" role="button" aria-expanded="false"
-                    aria-controls="advancedUI">
-                    <i class="link-icon" data-feather="book-open"></i>
-                    <span class="link-title">Service Type</span>
-                    <i class="link-arrow" data-feather="chevron-down"></i>
+                <a href="{{ route('service.ticket') }}" class="nav-link">
+                    <i class="link-icon" data-feather="bookmark"></i>
+                    <span class="link-title">Tickets</span>
+
                 </a>
-                <div class="collapse" id="uiComponents">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="{{ route('all.type') }}" class="nav-link">All Type</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/ui-components/alerts.html" class="nav-link">Add Type</a>
-                        </li>
-                    </ul>
-                </div>
+
             </li>
 
         </ul>
