@@ -12,13 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tickets', function (Blueprint $table) {
-            $table->enum('status', ['new','open', 'pending' ,'solved'])->default('open');
-            $table->id();
-            $table->string('service_type');
-            $table->string('requester');
-            $table->timestamps();
-            $table->unsignedInteger('priority');
+            $table->id(); // This is the auto-incrementing ID.
+            $table->string('status'); // Open, Closed, Solved, Pending
+            $table->string('service_type'); // e.g., Technical Support, Billing, General Inquiry
+            $table->string('requester'); // e.g., Technical Support, Billing, General Inquiry
+            $table->text('description'); // e.g., description of a ticket
+            $table->timestamp('requested')->useCurrent();
+            $table->string('priority'); // Low, Normal, High, Urgent
+            $table->timestamps(); // Automatically set the creation date
         });
+        
     }
 
     /**

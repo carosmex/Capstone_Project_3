@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Backend\CustomerController;
 use App\Http\Controllers\Backend\TicketController;
 
 
@@ -47,8 +48,22 @@ Route::middleware(['auth', 'role:admin'])->group(function(){
 Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->name('admin.login');
 
 Route::middleware(['auth', 'role:admin'])->group(function(){
-Route::controller(TicketController::class)->group(function(){
-    Route::get('/service/ticket', 'ServiceTicket')->name('service.ticket');
-    Route::get('/add/ticket', 'AddTicket')->name('add.ticket');
+    Route::controller(TicketController::class)->group(function(){
+        Route::get('/tickets', 'IndexTicket')->name('index.ticket');
+        Route::get('/tickets/create', 'CreateTicket')->name('create.ticket');
+        Route::post('/tickets/store', 'StoreTicket')->name('store.ticket');
+        Route::post('/tickets/{id}', 'ShowTicket')->name('show.ticket');
+        Route::delete('/tickets/{ticket}', 'DestroyTicket')->name('destroy.ticket');
+    });
+
 });
+
+Route::middleware(['auth', 'role:admin'])->group(function(){
+    Route::controller(CustomerController::class)->group(function(){
+        Route::get('/create/customer', 'CreateCustomer')->name('create.customer');
+        Route::post('/store/customer', 'StoreCustomer')->name('store.customer');
+        Route::get('/edit/customer{id}', 'EditCustomer')->name('edit.customer');
+        Route::post('/update/customer', 'UpdateCustomer')->name('update.customer');
+        Route::get('/delete/customer{id}', 'DeleteCustomer')->name('delete.customer');
+    });
 });

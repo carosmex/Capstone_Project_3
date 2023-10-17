@@ -19,7 +19,6 @@
 
     <!-- custom css -->
 
-
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="{{ asset('backend/assets/vendors/datatables.net-bs5/dataTables.bootstrap5.css') }}">
     <!-- End plugin css for this page -->
@@ -44,6 +43,8 @@
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="{{ asset('backend/assets/vendors/fullcalendar/main.min.css') }}">
     <!-- End plugin css for this page -->
+
+    <link rel="stylesheet" href="{{ asset('backend/assets/css/custom_css/select_element_custom.css') }}">
 
     <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.png') }}" />
 
@@ -71,6 +72,9 @@
 
         </div>
     </div>
+
+    <script src="{{ asset('backend/assets/vendors/tinymce/tinymce.min.js') }}"></script>
+    <script src="{{ asset('backend/assets/js/tinymce.js') }}"></script>
 
     <!-- core:js -->
     <script src="{{ asset('backend/assets/vendors/core/core.js') }}"></script>
@@ -115,6 +119,12 @@
         @endif
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script src="{{ asset('backend/assets/js/custom_js/alert.js') }}"></script>
+
+    <script src="{{ asset('backend/assets/js/custom_js/radiobutton.js') }}"></script>
+
     <!-- Start DataTable -->
     <script src="{{ asset('backend/assets/vendors/datatables.net/jquery.dataTables.js') }}"></script>
     <script src="{{ asset('backend/assets/vendors/datatables.net-bs5/dataTables.bootstrap5.js') }}"></script>
@@ -126,6 +136,12 @@
     <script src="{{ asset('backend/assets/vendors/moment/moment.min.js') }}"></script>
     <script src="{{ asset('backend/assets/vendors/fullcalendar/main.min.js') }}"></script>
     <!-- End plugin js for this page -->
+
+    <script src="{{ asset('backend/assets/js/custom_js/other-option.js') }}"></script>
+
+    <script src="{{ asset('backend/assets/js/custom_js/unit-counter.js') }}"></script>
+
+    <script src="{{ asset('backend/assets/js/custom_js/customer-or-organization.js') }}"></script>
 
 </body>
 

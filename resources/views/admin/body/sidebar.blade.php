@@ -58,12 +58,16 @@
             <li class="nav-item nav-category">Components</li>
 
             <li class="nav-item">
-                <a href="{{ route('service.ticket') }}" class="nav-link">
+                <a href="{{ route('index.ticket') }}" class="nav-link">
                     <i class="link-icon" data-feather="bookmark"></i>
                     <span class="link-title">Tickets</span>
-
                 </a>
-
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('create.customer') }}" class="nav-link">
+                    <i class="link-icon" data-feather="users"></i>
+                    <span class="link-title">Customer</span>
+                </a>
             </li>
 
         </ul>
